@@ -10,6 +10,7 @@
         <!-- Bootstrap -->
         <link href="../css/bootstrap.css" rel="stylesheet" />
         <link href="../css/sticky-footer-navbar.css" rel="stylesheet" />
+        <link href="../css/offcanvas.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -23,16 +24,16 @@
                         <span class="icon-bar"></span>
                     </button>
                     
-                    <a class="navbar-brand" href="#">TKOVS</a>
+                    <a class="navbar-brand" href="entrada.html">TKOVS</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="entenda-a-pagina.html">Início</a></li>
-                        <li><a href="#about">Sobre mim</a></li>
+                        <li><a href="inicio.html">Início</a></li>
+                        <li><a href="sobre.html">Sobre mim</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contato<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Geral</a></li>
+                                <li><a href="contato.html">Geral</a></li>
                                 <li><a href="https://github.com/tkovs">Github</a></li>
                                 <li><a href="https://facebook.com/joaovitorIFAL">Facebook</a></li>
                             </ul>
@@ -41,15 +42,39 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
+<div class="container">
 
-        <div class="container">
-            <div class="page-header">
-                <h1>Bem vindo ao meu site</h1>
-            </div>
-            
-            <p class="lead">Esse site tem o objetivo de ganhar 11 pontos na disciplina de pweb, independente do conteúdo que aqui haja. Clique em <a href="entenda-a-pagina.html">Início</a> para começar a navegar pelo meu site.</p>
-        </div>
+      <div class="row row-offcanvas row-offcanvas-right">
 
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Entenda a página!</h1>
+            <p>À direita, há links que o levam para páginas focadas em um tema específico. Desse modo, há uma grande organização do conteúdo do site.</p>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-lg-8">
+              <h2>Tópico inútil</h2>
+              <p>Escrevo esse texto aqui, com as mãos, através de conexões feitas no meu organismo, que me permitem dizer isso, aqui, que, com orgulho, não diz nada, senão que eu ja esqueci o que tava escrevendo então vou deixar só esse textinho aqui flw</p>
+            </div><!--/.col-xs-6.col-lg-4-->
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+          <div class="list-group">
+            <a href="entenda-a-pagina.html" class="list-group-item active">Entenda a página</a>
+            <a href="musicas.html" class="list-group-item">Músicas</a>
+            <a href="filmes.html" class="list-group-item">Filmes</a>
+            <a href="japones.html" class="list-group-item">Japonês</a>
+            <a href="livros.html" class="list-group-item">Livros</a>
+            <a href="computacao.html" class="list-group-item">Computação</a>
+            <a href="jogos.html" class="list-group-item">Jogos</a>
+          </div>
+        </div><!--/.sidebar-offcanvas-->
+      </div><!--/row-->
+    </div><!--/.container-->
         <footer class="footer">
             <div class="container">
                 <p class="text-muted">Um footer legal numa página legal</p>
@@ -60,5 +85,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
         <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/offcanvas.js"></script>
     </body>
 </html>
