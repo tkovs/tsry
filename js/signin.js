@@ -1,15 +1,11 @@
 function login() {
 	var resposta  = document.getElementById("inputResposta").value;
 	var bolsonaro = document.getElementById("inputBolsonaro");
-	username = username.toLowerCase();
+	resposta = resposta.toLowerCase();
 
-	alert("Apertou!!");
-
-	if (username == "cama") {
-		alert("Acertou!!");
-	} else if (bolsonaro.checked) {
-		alert("Acertou!!");
+	if (resposta == "cama" || bolsonaro.checked) {
+		window.open("pages/entrada.html");
 	} else {
-		alert("Resposta errada!");
+		alert("Tente novamente!");
 	}
 }
