@@ -11,6 +11,7 @@
         <link href="../css/bootstrap.css" rel="stylesheet" />
         <link href="../css/sticky-footer-navbar.css" rel="stylesheet" />
         <link href="../css/offcanvas.css" rel="stylesheet" />
+        <link href="../css/dashboard.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -42,44 +43,68 @@
                 </div><!--/.nav-collapse -->
             </div>
         </nav>
-<div class="container">
 
-      <div class="row row-offcanvas row-offcanvas-right">
+        <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Visão geral <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Melhores artistas</h1>
 
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
-          <div class="jumbotron">
-            <h1>Entenda a página!</h1>
-            <p>À direita, há links que o levam para páginas focadas em um tema específico. Desse modo, há uma grande organização do conteúdo do site.</p>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-lg-8">
-              <h2>Tópico inútil</h2>
-              <p>Escrevo esse texto aqui, com as mãos, através de conexões feitas no meu organismo, que me permitem dizer isso, aqui, que, com orgulho, não diz nada, senão que eu ja esqueci o que tava escrevendo então vou deixar só esse textinho aqui flw</p>
-            </div><!--/.col-xs-6.col-lg-4-->
-          </div><!--/row-->
-        </div><!--/.col-xs-12.col-sm-9-->
-
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-            <a href="entenda-a-pagina.html" class="list-group-item active">Entenda a página</a>
-            <a href="musicas.html" class="list-group-item">Músicas</a>
-            <a href="#" class="list-group-item">Filmes</a>
-            <a href="#" class="list-group-item">Japonês</a>
-            <a href="#" class="list-group-item">Livros</a>
-            <a href="#" class="list-group-item">Computação</a>
-            <a href="#" class="list-group-item">Jogos</a>
-          </div>
-        </div><!--/.sidebar-offcanvas-->
-      </div><!--/row-->
-    </div><!--/.container-->
-        <footer class="footer">
-            <div class="container">
-                <p class="text-muted">Um footer legal numa página legal</p>
+          <div class="row placeholders">
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="../img/jimi-hendrix.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Jimi Hendrix</h4>
             </div>
-        </footer>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="../img/stevie-ray-vaughan.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Stevie Ray Vaughan</h4>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="../img/robert-johnson.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Robert Johnson</h4>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder">
+              <img src="../img/muddy-waters.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h4>Muddy Waters</h4>
+            </div>
+          </div>
+
+          <h2 class="sub-header">fucking musicas</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Compositor</th>
+                  <th>Música</th>
+                  <th>Ano</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stevie Ray Vaughan</td>
+                  <td>Pride and Joy</td>
+                  <td>1983</td>
+                </tr>
+                <tr>
+                  <td>Jimi Hendrix</td>
+                  <td>Little Wing</td>
+                  <td>1968</td>
+                </tr>
+                <tr>
+                  <td>Stevie Ray Vaughan</td>
+                  <td>Cold Shot</td>
+                  <td>1984</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
 
         <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
