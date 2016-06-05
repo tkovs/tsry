@@ -8,14 +8,45 @@
         <title>Página inicial</title>
 
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
     </head>
 
     <body>
-	<nav class="navbar navbar-inverse" role="navigation">
-	    <div class="container">
-		<p class="navbar-text">tsry</p>
-	    </div>
-	</nav>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                    <a class="navbar-brand" href="#">TKOVS</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Prima</a></li>
+                        <li><a href="#about">Su di me</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contatto<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Generale</a></li>
+                                <li><a href="https://github.com/tkovs">Github</a></li>
+                                <li><a href="https://facebook.com/joaovitorIFAL">Facebook</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="page-header">
+
+        <!-- jQuery (obrigatório para plugins JavaScript do Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Inclui todos os plugins compilados (abaixo), ou inclua arquivos separadados se necessário -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
